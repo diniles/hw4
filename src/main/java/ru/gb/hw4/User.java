@@ -3,7 +3,8 @@ package ru.gb.hw4;
 import java.util.UUID;
 
 public class User {
-    private UUID id = UUID.randomUUID();
+    private static Integer counter = 0;
+    private Integer id;
     private String name;
     private String email;
     private Integer age;
@@ -12,17 +13,18 @@ public class User {
     }
 
     public User(String name, String email, Integer age) {
+        this.id = counter++;
         this.name = name;
         this.email = email;
         this.age = age;
     }
 
-    public UUID getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = UUID.fromString(id);
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {

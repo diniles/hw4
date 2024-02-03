@@ -23,7 +23,7 @@ public class UserRepository {
         return users;
     }
 
-    public User getById(UUID id) {
+    public User getById(Integer id) {
         return users.stream().filter(u -> u.getId().equals(id)).findFirst().orElse(null);
     }
 
