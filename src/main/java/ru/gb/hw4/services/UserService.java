@@ -6,7 +6,6 @@ import ru.gb.hw4.User;
 import ru.gb.hw4.UserRepository;
 
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class UserService {
@@ -74,8 +73,8 @@ public class UserService {
         }
     }
 
-    public boolean deleteUser(String id) {
-        boolean deletedUser = userRepository.delete(UUID.fromString(id));
+    public boolean deleteUser(Integer id) {
+        boolean deletedUser = userRepository.delete(id);
         if (deletedUser) {
             notificationService.notify("User " + id + " has been deleted");
             return true;
