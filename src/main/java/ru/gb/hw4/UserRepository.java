@@ -11,9 +11,14 @@ public class UserRepository {
 
     public UserRepository() {
         users = new ArrayList<>();
+        users.add(new User("user1", "user1@gmail.com", 21));
+        users.add(new User("user2", "user2@gmail.com", 22));
+        users.add(new User("user3", "user3@gmail.com", 23));
+        users.add(new User("user4", "user4@gmail.com", 24));
+        users.add(new User("user5", "user5@gmail.com", 25));
     }
 
-    public User add(User user) {
+    public User addUser(User user) {
         users.add(user);
         return user;
     }

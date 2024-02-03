@@ -33,7 +33,7 @@ public class UserService {
         }
         User user = new User(name, email, age);
         notificationService.notify("User " + name + " has been created");
-        return userRepository.add(user);
+        return userRepository.addUser(user);
     }
 
     public User updateUser(User user) {
