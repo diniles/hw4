@@ -4,7 +4,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Repository
 public class UserRepository {
@@ -46,8 +45,8 @@ public class UserRepository {
         return null;
     }
 
-    public boolean delete(UUID id) {
-        return users.removeIf(u -> u.getId().equals(id));
+    public boolean delete(Integer id) {
+        return users.removeIf(u -> u.getId() == id);
     }
 
 }

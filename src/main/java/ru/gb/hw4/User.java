@@ -1,7 +1,5 @@
 package ru.gb.hw4;
 
-import java.util.UUID;
-
 public class User {
     private static Integer counter = 0;
     private Integer id;
