@@ -11,11 +11,13 @@ public class UserRepository {
 
     public UserRepository() {
         users = new ArrayList<>();
-        users.add(new User("user1", "user1@gmail.com", 21));
-        users.add(new User("user2", "user2@gmail.com", 22));
-        users.add(new User("user3", "user3@gmail.com", 23));
-        users.add(new User("user4", "user4@gmail.com", 24));
-        users.add(new User("user5", "user5@gmail.com", 25));
+        users.add(new User("Daniel", "Löble@gmail.com", 51));
+        users.add(new User("Sascha", "Gerstner@gmail.com", 47));
+        users.add(new User("Andi", "Deris@gmail.com", 60));
+        users.add(new User("Michael", "Kiske@gmail.com", 56));
+        users.add(new User("Kai", "Hansen@gmail.com", 61));
+        users.add(new User("Markus", "Grosskopf@gmail.com", 59));
+        users.add(new User("Michael", "Weikath@gmail.com", 62));
     }
 
     public User addUser(User user) {
